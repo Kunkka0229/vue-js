@@ -7,11 +7,11 @@ const state = {
 };
 
 const mutations = {
-
+    // 登录
     [types.LOGIN](state, data) {
         state.userInfo = data;
     },
-
+    // 退出登录
     [types.LOGIN_OUT](state) {
         state.userInfo = {};
         localStorage.removeItem('userInfo');

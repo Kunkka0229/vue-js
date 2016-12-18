@@ -23,7 +23,7 @@
         methods: {
             handleLogin() {
                 const data = {
-                    accessToken: this.accessToken
+                    accesstoken: this.accessToken
                 };
                 this.$store.dispatch(LOGIN, data);
                 this.$router.push('/userInfo');

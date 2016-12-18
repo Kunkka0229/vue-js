@@ -5,6 +5,9 @@ import VueRouter from 'vue-router';
 import store from './store';
 import App from './App';
 
+import './common/js/flexible.js';
+import './common/scss/index.scss';
+
 
 Vue.use(VueRouter);
 

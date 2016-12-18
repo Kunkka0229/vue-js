@@ -4,6 +4,6 @@ export const login = (data) => {
     return fetchApi({
         url: '/accesstoken',
         method: 'post',
-        body: {accesstoken: data.accessToken}
+        body: {accesstoken: data.accesstoken}
     })
 };

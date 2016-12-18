@@ -1,0 +1,39 @@
+/* iconfont */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../iconfont/iconfont.woff') format('woff'),
+  url('../iconfont/iconfont.ttf') format('truetype'),
+  url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* border-1px */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-1px{
+    &:after{
+      -webkit-transform: scaleY(.7);
+      -moz-transform: scaleY(.7);
+      -ms-transform: scaleY(.7);
+      -o-transform: scaleY(.7);
+      transform: scaleY(.7);
+    }
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .border-1px{
+    &:after{
+      -webkit-transform: scaleY(.5);
+      -moz-transform: scaleY(.5);
+      -ms-transform: scaleY(.5);
+      -o-transform: scaleY(.5);
+      transform: scaleY(.5);
+    }
+  }
+}

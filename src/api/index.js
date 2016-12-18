@@ -1,6 +1,6 @@
-import 'es6-promise/auto';
 import axios from 'axios';
 
+// vue-js api 路径前缀
 const urlBase = 'http://www.vue-js.com/api/v1';
 
 const baseOpts = {
@@ -11,28 +11,22 @@ const baseOpts = {
 
 const fetchApi = (cfg) => {
     let opts = Object.assign({}, baseOpts, cfg);
-
     const url = opts.url;
     const method = opts.method;
     const data = opts.body;
-    
-    let fetchUrl = urlBase + url;
 
-    if(method === 'post'){
-       return new Promise((resolve, reject) => {
-           axios.post(fetchUrl, data)
-               .then(function (response) {
-                   resolve(response);
-               })
-               .catch(function (error) {
-                   reject(error);
-               });
-       })
-    }
+    // vue-js 数据请求地址
+    let dataUrl = urlBase + url;
+
+    return new Promise((resolve, reject) => {
+        axios[method](dataUrl, data)
+            .then(function (response) {
+                resolve(response);
+            })
+            .catch(function (error) {
+                reject(error);
+            });
+    })
 };
 
 export default fetchApi;
-
-
-
-
