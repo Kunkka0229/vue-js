@@ -1,6 +1,6 @@
 # vue-js
 
-> vue-js 网站 vue2.0 vue-router vuex axios scss 重构手机版
+> vue-js 网站 vue2.0 vue-router vuex axios scss webpack打包 手机版
 
 ## Build Setup
 
