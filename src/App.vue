@@ -1,7 +1,8 @@
 <template>
     <div id="app">
-        <router-link to="/login">sadfas</router-link>
-        <router-view></router-view>
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
     </div>
 </template>
 

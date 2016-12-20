@@ -14,19 +14,37 @@ import Home from 'components/home';
 Vue.use(VueRouter);
 
 const routes = [
-    // {path: '*', redirect: '/'},
-    // {path: '/', component: Home},
-    {path: '/login', component: resolve => require(['components/login'], resolve)},
-    {path: '/userInfo', component: resolve => require(['components/userInfo'], resolve)}
+    {
+        path: '/',
+        component: Home
+    },
+    {
+        path: '/login',
+        component: resolve => require(['components/login'], resolve)
+    },
+    {
+        path: '/userInfo',
+        component: resolve => require(['components/userInfo'], resolve),
+        beforeEnter: (to, from, next) => {
+            if (!localStorage.getItem('userInfo')) {
+                next('/login');
+            } else {
+                next();
+            }
+        }
+    },
+    {
+        path: '*',
+        redirect: '/'
+    }
 ];
 
 const router = new VueRouter({
-    mode: 'abstract',
+    // mode: 'abstract',
     base: __dirname,
     linkActiveClass: 'active',
     routes
 });
-
 
 /* eslint-disable no-new */
 new Vue({
@@ -35,3 +53,7 @@ new Vue({
     store,
     ...App
 });
+
+// 定位到home页面
+router.push('*');
+

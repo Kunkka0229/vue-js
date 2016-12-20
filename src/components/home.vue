@@ -1,9 +1,6 @@
 <template>
     <div class="home">
         <v-header></v-header>
-        <div class="container">
-            <router-view></router-view>
-        </div>
     </div>
 </template>
 
