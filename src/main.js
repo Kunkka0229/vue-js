@@ -8,10 +8,14 @@ import App from './App';
 import './common/js/flexible.js';
 import './common/scss/index.scss';
 
+import Home from 'components/home';
+
 
 Vue.use(VueRouter);
 
 const routes = [
+    // {path: '*', redirect: '/'},
+    // {path: '/', component: Home},
     {path: '/login', component: resolve => require(['components/login'], resolve)},
     {path: '/userInfo', component: resolve => require(['components/userInfo'], resolve)}
 ];
