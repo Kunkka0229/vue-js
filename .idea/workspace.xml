@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0396ea0e-63b1-47bc-9933-13474b2d4732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/topicList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/modules/topic.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/home.vue" afterPath="$PROJECT_DIR$/src/views/home.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/login.vue" afterPath="$PROJECT_DIR$/src/views/login.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/userInfo.vue" afterPath="$PROJECT_DIR$/src/views/userInfo.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/index.js" afterPath="$PROJECT_DIR$/src/api/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/publicApi.js" afterPath="$PROJECT_DIR$/src/api/publicApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/header.vue" afterPath="$PROJECT_DIR$/src/components/header.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/modules/user.js" afterPath="$PROJECT_DIR$/src/store/modules/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/mutation-types.js" afterPath="$PROJECT_DIR$/src/store/mutation-types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/topicList.vue" afterPath="$PROJECT_DIR$/src/components/topicList.vue" />
     </list>
     <ignored path="vue-js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,10 +72,10 @@
       <file leaf-file-name="topicList.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/topicList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="377">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding>
-                <element signature="e#271#315#0" expanded="true" />
+                <element signature="e#692#736#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -448,7 +436,7 @@
       <workItem from="1482030414550" duration="8609000" />
       <workItem from="1482109951056" duration="2435000" />
       <workItem from="1482200150450" duration="10635000" />
-      <workItem from="1482286238802" duration="6396000" />
+      <workItem from="1482286238802" duration="9195000" />
     </task>
     <task id="LOCAL-00001" summary="readme">
       <created>1481897875677</created>
@@ -478,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482219071009</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="获取topic信息">
+      <created>1482294289010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482294289010</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45478000" />
+    <option name="totallyTimeSpent" value="48277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -521,7 +516,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="readme" />
     <MESSAGE value="silder" />
-    <option name="LAST_COMMIT_MESSAGE" value="silder" />
+    <MESSAGE value="获取topic信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取topic信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -929,10 +925,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/topicList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="377">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
-            <element signature="e#271#315#0" expanded="true" />
+            <element signature="e#692#736#0" expanded="true" />
           </folding>
         </state>
       </provider>

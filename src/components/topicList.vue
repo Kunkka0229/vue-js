@@ -1,9 +1,16 @@
 <template>
     <div class="topic-list">
         <ul>
-            <li class="item">
+            <li class="item" v-for="topic in topics.data" :data-id="topic.id">
                 <div class="item-user">
-                    {{topics}}
+                    <div class="user-avatar">
+                        <img :src="topic.author.avatar_url" alt="">
+                    </div>
+                    <div class="user-detail">
+                        <span class="username">{{ topic.author.loginname }}</span>
+                        <span>置顶</span>
+                        <span>{{ topic.tab | textFormat }}</span>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -36,6 +43,21 @@
         },
         computed: {
             ...mapGetters(['topics'])
+        },
+        filters: {
+            textFormat(value) {
+                let str = '';
+                let map = {
+                    share: '分享',
+                    ask: '问答',
+                    job: '招聘'
+                }
+                if(!value){
+                    return '暂无'
+                }
+                str = map[value];
+                return str;
+            }
         }
     }
 </script>
