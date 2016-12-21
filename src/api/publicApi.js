@@ -7,3 +7,16 @@ export const login = (data) => {
         body: {accesstoken: data.accesstoken}
     })
 };
+
+export const topicList = (data) => {
+    return fetchApi({
+        url: '/topics',
+        body: {params: {...data}}
+    })
+};
+
+export const topicInfo = (id) => {
+    return fetchApi({
+        url: '/topic/' + id
+    })
+};

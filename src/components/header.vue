@@ -13,8 +13,8 @@
                         <img src="../assets/logo.png" alt="">
                         <span class="name">登录</span>
                     </div>
-                    <div class="user" v-else>
-                        <img :src="userInfo.avatar_url" alt="" @click="user">
+                    <div class="user" v-else @click="user">
+                        <img :src="userInfo.avatar_url" alt="">
                         <span class="name">{{ userInfo.loginname }}</span>
                     </div>
                     <ul class="tag-list">
@@ -89,7 +89,7 @@
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scope>
-    @import "../common/scss/mixins";
+    @import "../common/scss/_mixins";
 
     .header {
         .header-title {
@@ -100,6 +100,7 @@
             height: 80px;
             font-size: 36px; /*px*/
             @include border-1px(rgba(7, 17, 27, .1));
+            box-shadow: 0 0 8px rgba(0,0,0,.2);
             & > i {
                 padding: 0 40px;
                 font-size: 36px; /*px*/

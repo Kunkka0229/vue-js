@@ -31,7 +31,7 @@
                     accesstoken: this.accessToken
                 };
                 this.$store.dispatch(LOGIN, data);
-                this.$router.push('/userInfo');
+                this.$router.push('/');
             }
         },
         computed: {

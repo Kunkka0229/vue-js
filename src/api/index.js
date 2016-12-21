@@ -4,8 +4,8 @@ import axios from 'axios';
 const urlBase = 'http://www.vue-js.com/api/v1';
 
 const baseOpts = {
-    url: '/accesstoken',
-    method: 'post',
+    url: 'topics',
+    method: 'get',
     body: {}
 };
 
@@ -21,7 +21,7 @@ const fetchApi = (cfg) => {
     return new Promise((resolve, reject) => {
         axios[method](dataUrl, data)
             .then(function (response) {
-                resolve(response);
+                resolve(response.data);
             })
             .catch(function (error) {
                 reject(error);

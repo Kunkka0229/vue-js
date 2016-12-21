@@ -1,4 +1,3 @@
-import axios from 'axios';
 import * as types from '../mutation-types';
 import {login} from '../../api/publicApi';
 
@@ -23,10 +22,10 @@ const actions = {
     [types.LOGIN]({commit}, data) {
         return login(data).then((response) => {
             const user = {
-                loginname: response.data.loginname,
-                id: response.data.id,
-                avatar_url: response.data.avatar_url,
-                accesstoken: response.data.accesstoken
+                loginname: response.loginname,
+                id: response.id,
+                avatar_url: response.avatar_url,
+                accesstoken: response.accesstoken
             };
             localStorage.setItem('userInfo', JSON.stringify(user));
             commit(types.LOGIN, user);

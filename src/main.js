@@ -8,7 +8,7 @@ import App from './App';
 import './common/js/flexible.js';
 import './common/scss/index.scss';
 
-import Home from 'components/home';
+import Home from 'views/home';
 
 
 Vue.use(VueRouter);
@@ -20,11 +20,11 @@ const routes = [
     },
     {
         path: '/login',
-        component: resolve => require(['components/login'], resolve)
+        component: resolve => require(['views/login'], resolve)
     },
     {
         path: '/userInfo',
-        component: resolve => require(['components/userInfo'], resolve),
+        component: resolve => require(['views/userInfo'], resolve),
         beforeEnter: (to, from, next) => {
             if (!localStorage.getItem('userInfo')) {
                 next('/login');
