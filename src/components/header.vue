@@ -134,6 +134,7 @@
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, .3);
+                z-index: 998;
             }
             .silder-nav {
                 display: flex;
@@ -149,6 +150,7 @@
                 background-size: 72%;
                 color: #fff;
                 transform: translate3d(0, 0, 0);
+                z-index: 999;
                 .user {
                     border-bottom: 1px solid #626262;
                     padding-bottom: .3rem;

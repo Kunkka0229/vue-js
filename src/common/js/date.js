@@ -22,8 +22,41 @@ export function formatDate(date, fmt) {
         }
     }
     return fmt;
+
+    // 补0
+    function padLeftZero(str) {
+        return ('00' + str).substr(str.length);
+    }
 }
-// 补0
-function padLeftZero(str) {
-    return ('00' + str).substr(str.length);
+
+export function formatDateToEditor(date) {
+    let tempstamp = +new Date() - +new Date(date),
+         year = ~~(tempstamp / (12 * 30 * 24 * 60 * 60 * 1000)),
+         month = ~~(tempstamp / (30 * 24 * 60 * 60 * 1000)),
+         day = ~~(tempstamp / (24 * 60 * 60 * 1000)),
+         hour = ~~(tempstamp / (60 * 60 * 1000)),
+         minute = ~~(tempstamp / (60 * 1000)),
+         second = ~~(tempstamp / (1000)),
+         millisecond = tempstamp;
+
+    if(day){
+        return date.split('T')[0];
+    }
+    if(hour){
+        return `${hour}小时前`;
+    }
+    if(minute){
+        return `${minute}分钟前`;
+    }
+    if(second){
+        if(second && second < 10){
+            return '刚刚'
+        }
+        return `${second}秒前`;
+    }
+    // 处理 本地评论插入时的日期
+    if (millisecond) {
+        return "刚刚"
+    }
 }
+
